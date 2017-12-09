@@ -1,0 +1,36 @@
+{
+    "name": "scriptotek/alma-client",
+    "type": "library",
+    "description": "Package for interacting with some of the Alma APIs",
+    "homepage": "http://github.com/scriptotek/alma-client",
+    "keywords": ["alma"],
+    "require": {
+        "php" : "^5.5 || ^7.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "scriptotek/marc": "^0.3.0",
+        "danmichaelo/quitesimplexmlelement": "^0.4",
+        "scriptotek/sru-client": "^0.4.2"
+    },
+    "require-dev": {
+        "sami/sami": "~3.3",
+        "phpspec/phpspec": "~2.0 | ~3.0",
+        "henrikbjorn/phpspec-code-coverage": "~2.0 | ~3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dan Michael O. Heggø",
+            "email": "danmichaelo@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Scriptotek\\Alma\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "spec\\Scriptotek\\Alma\\": "spec/"
+        }
+    }
+}
